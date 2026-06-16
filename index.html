@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cart-container">
+    <h2>Shopping Cart</h2>
+
+    <!-- Products -->
+    <div class="products">
+      <div class="product">
+        <span>Laptop - ₹40000</span>
+        <button onclick="addToCart('Laptop', 40000)">Add</button>
+      </div>
+
+      <div class="product">
+        <span>Headphones- ₹1000</span>
+        <button onclick="addToCart('Headphones-', 1000)">Add</button>
+      </div>
+
+      <div class="product">
+        <span>Smartphone - ₹15000</span>
+        <button onclick="addToCart('Smartphone', 15000)">Add</button>
+      </div>
+       <div class="product">
+        <span>Smartwatch- ₹2500</span>
+        <button onclick="addToCart('Smartwatch-', 2500)">Add</button>
+      </div>
+    </div>
+
+    <!-- Cart -->
+    <h3>Your Cart</h3>
+    <ul id="cartList"></ul>
+
+    <div class="total">
+      Total: ₹<span id="totalPrice">0</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
